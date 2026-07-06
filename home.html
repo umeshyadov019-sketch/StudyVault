@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyVault - Chats ❤️</title>
+
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+<header class="header">
+  <div>
+    <h2>❤️ StudyVault</h2>
+    <p id="userName">Loading...</p>
+  </div>
+
+  <button id="logoutBtn">Logout</button>
+</header>
+
+<div style="padding:15px;">
+
+  <input
+    type="text"
+    id="searchEmail"
+    placeholder="Search user by email..."
+    style="width:100%;padding:12px;border-radius:10px;">
+
+  <br><br>
+
+  <button id="searchBtn" style="width:100%;">
+    🔍 Search User
+  </button>
+
+</div>
+
+<div id="searchResult"></div>
+
+<h3 style="padding:15px;">Recent Chats</h3>
+
+<div id="chatList"></div>
+
+<script type="module" src="home.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyVault ❤️ Chat</title>
+
+  <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+   <div>
+  <h2>❤️ StudyVault</h2>
+  <p id="userEmail">Loading...</p>
+  <p id="userStatus">Connecting...</p>
+</div>
+
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <!-- Messages -->
+  <div id="chatBox" class="chat-box">
+
+  </div>
+
+<div id="emojiBox" class="emoji-box">
+
+  <span>😀</span>
+  <span>😂</span>
+  <span>😍</span>
+  <span>🥰</span>
+  <span>😘</span>
+  <span>😭</span>
+  <span>❤️</span>
+  <span>👍</span>
+  <span>🔥</span>
+  <span>🎉</span>
+
+</div>
+
+<!-- Input Area -->
+<div class="input-area">
+
+    <button id="emojiBtn">😊</button>
+
+    <input
+        type="text"
+        id="message"
+        placeholder="Type your message... ❤️">
+
+    <input type="file"
+           id="imageInput"
+           accept="image/*"
+           hidden>
+
+    <button id="imageBtn">📷</button>
+
+    <button id="sendBtn">❤️</button>
+
+</div>
+
+<script type="module" src="chat.js"></script>
+
+</body>
+</html>
