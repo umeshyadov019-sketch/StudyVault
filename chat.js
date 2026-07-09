@@ -293,7 +293,7 @@ if (action === "2") {
     return;
 }
     // Edit code
-    if (action === "2" && data.sender === currentUser.email) {
+    if (action === "3" && data.sender === currentUser.email) {
 
         const newText = prompt("Edit your message:", data.text);
 
@@ -311,7 +311,7 @@ if (action === "2") {
     }
 
     // Delete code
-if (action === "3" && data.sender === currentUser.email) {
+if (action === "4" && data.sender === currentUser.email) {
 
         const ok = confirm("Delete this message?");
 
@@ -385,6 +385,14 @@ data.sender === currentUser.email
 }
 ${data.edited ? " (edited)" : ""}
 </small>
+${data.reaction ? `
+<div style="
+margin-top:4px;
+font-size:18px;
+">
+${data.reaction}
+</div>
+` : ""}
 
 `;
 
