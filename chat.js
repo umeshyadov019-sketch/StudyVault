@@ -375,6 +375,14 @@ ${(data.replyTo.text || "").substring(0, 50)}
 ` : ""}
 
 <div>${data.text}</div>
+${data.reaction ? `
+<div style="
+margin-top:4px;
+font-size:18px;
+">
+${data.reaction}
+</div>
+` : ""}
 
 <small>
 ${data.time}
@@ -385,14 +393,7 @@ data.sender === currentUser.email
 }
 ${data.edited ? " (edited)" : ""}
 </small>
-${data.reaction ? `
-<div style="
-margin-top:4px;
-font-size:18px;
-">
-${data.reaction}
-</div>
-` : ""}
+
 
 `;
 
