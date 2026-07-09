@@ -38,15 +38,7 @@ const replyText = document.getElementById("replyText");
 const cancelReply = document.getElementById("cancelReply");
 
 let replyingTo = null;
-const reactions = [
-    "❤️",
-    "😂",
-    "😍",
-    "😮",
-    "😢",
-    "👍",
-    "🔥"
-];
+
 const typingStatus = document.getElementById("typingStatus");
 
 const typingRef = ref(db, "typing/" + roomId);
