@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyVault ❤️</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script>
+const savedPin = localStorage.getItem("studyvault_pin");
+
+if (savedPin && !sessionStorage.getItem("unlocked")) {
+    window.location.href = "lock.html";
+}
+</script>
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💘</span>
+    </div>
+
+    <!-- Welcome Card -->
+    <div class="login-card">
+
+        <div class="logo">❤️</div>
+
+        <h1>StudyVault</h1>
+
+        <p class="quote">
+            A private little world made just for us. 💖
+        </p>
+
+        <a href="login.html">
+            <button id="enterBtn">Enter ❤️</button>
+        </a>
+        <br><br>
+
+<a href="signup.html">
+    <button>Create Account ✨</button>
+</a>
+
+    </div>
+
+</body>
+</html>
